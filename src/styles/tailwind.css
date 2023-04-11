@@ -3,8 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --vh: 1vh;
+}
+
 @layer base {
   html {
     font-family: 'Berkshire Swash', cursive;
   }
+}
+
+.container {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }

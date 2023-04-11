@@ -30,10 +30,10 @@ const HomePage = () => {
           ) : null}
         </div>
 
-        <div className="flex justify-between items-center gap-3 z-10 pb-10">
+        <div className="flex justify-between items-center gap-3 z-10 pb-20">
           {page == 1 && (
             <Button
-              className="bg-orange-400 text-white px-8 m-auto"
+              className="bg-orange-400 text-white px-16 m-auto"
               animate={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{ duration: 2, type: 'spring', delay: 1 }}
