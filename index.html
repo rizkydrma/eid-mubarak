@@ -7,7 +7,15 @@
     <title>Eid Mubarak with Rizky</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root" style="min-height: 100%"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      const documentHeight = () => {
+        const doc = document.documentElement;
+        doc.style.setProperty('--doc-height', `${window.innerHeight}px`);
+      };
+      window.addEventListener('resize', documentHeight);
+      documentHeight();
+    </script>
   </body>
 </html>
