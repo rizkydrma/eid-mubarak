@@ -34,15 +34,6 @@ const FirstPage = () => {
       >
         Kareem
       </motion.h1>
-
-      <motion.p
-        className="text-xs text-primary-400 pt-3"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, type: 'spring', delay: 1.5 }}
-      >
-        By. Rizky Darma R
-      </motion.p>
     </div>
   );
 };

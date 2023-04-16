@@ -6,6 +6,7 @@ import FourthPage from '../components/Section/FourthPage';
 import SecondPage from '../components/Section/SecondPage';
 import ThridPage from '../components/Section/ThirdPage';
 import useWindowDimensions from '../hook/useWindowDimensions';
+import { HiArrowLeft, HiArrowRight } from 'react-icons/hi2';
 
 const HomePage = () => {
   const { width } = useWindowDimensions();
@@ -51,7 +52,7 @@ const HomePage = () => {
                 transition={{ duration: 2, type: 'spring', delay: 1 }}
                 onClick={() => setPage((prev) => prev - 1)}
               >
-                back
+                <HiArrowLeft className="w-4" />
               </Button>
               <Button
                 className="bg-orange-400 text-white px-8"
@@ -60,7 +61,7 @@ const HomePage = () => {
                 transition={{ duration: 2, type: 'spring', delay: 1 }}
                 onClick={() => setPage((prev) => prev + 1)}
               >
-                next
+                <HiArrowRight className="w-4" />
               </Button>
             </>
           )}

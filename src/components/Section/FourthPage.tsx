@@ -38,9 +38,9 @@ const FourthPage = () => {
             transition={{ duration: 1, type: 'spring' }}
           />
           <AnimatedTextWord text="Dengan perjuangan dan pengorbanan selama bulan Ramadan, para kaum muslimin telah membuktikan bahwa mereka memiliki tekad yang kuat untuk mendapatkan keberkahan dari Allah SWT. Semoga bulan Ramadan menjadi bulan yang memberikan inspirasi dan semangat bagi kita semua untuk menjadi lebih baik dalam menjalani hidup." />
-          <p className="text-xs text-primary-600 text-center mt-4">
-            Mulai Takbir Dalam {countDown} detik
-          </p>
+          <div className="h-6 w-6 bg-primary-700 rounded-full grid place-items-center m-auto">
+            <span className="text-xs text-white text-center">{countDown}</span>
+          </div>
         </>
       ) : (
         <div className="relative mt-10">
