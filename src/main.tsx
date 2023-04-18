@@ -24,7 +24,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <img
           src={BGPallete}
           alt="pallete background"
-          className="opacity-10 h-[100%]"
+          className="opacity-10 h-[100%] object-center object-cover w-full"
         />
       </div>
       <RouterProvider router={router} />
