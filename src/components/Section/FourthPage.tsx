@@ -21,7 +21,7 @@ const FourthPage = () => {
     }, 1000);
 
     return () => clearInterval(interval);
-  });
+  }, [countDown]);
 
   return (
     <div className="px-10 z-10">

@@ -5,6 +5,7 @@ import { BGPallete } from './assets/images';
 import HomePage from './pages/HomePage';
 import './styles/main.css';
 import EidMubarak from './pages/EidMubarak';
+import SpecialCaption from './pages/Special-Caption';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: '/eid-mubarak',
     element: <EidMubarak />,
+  },
+  {
+    path: '/special-caption',
+    element: <SpecialCaption />,
   },
 ]);
 
